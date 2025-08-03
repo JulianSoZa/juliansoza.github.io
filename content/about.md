@@ -2,6 +2,7 @@
 title: About
 type: about
 ---
+<img src="https://avatars.githubusercontent.com/u/91927694?v=4" alt="Profile Picture" style="border: 3px solid #333; border-radius: 50%; width: 250px; height: 250px;">
 
 ## Hi there 👋, I'm glad you're here! 😀
 
