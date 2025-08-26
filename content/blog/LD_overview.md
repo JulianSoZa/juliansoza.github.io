@@ -66,7 +66,7 @@ A magnetic anomaly is the deviation of the measured field from the theoretical v
 
 The total field $\textbf{B}$ is the contribution of the Earth's main field $\textbf{B}_E$ and the magnetic source $\delta \textbf{B}$. However, scalar magnetometers measure only the magnitude of this field. Thus, a magnetic anomaly $A$ is given by
 
-$$A = B - B_E = \hat{\textbf{B}} \cdot \delta \textbf{B},$$
+$$A = B - B_E = \hat{\textbf{B}}_E \cdot \delta \textbf{B},$$
 
 where only the component of the local field $\delta \textbf{B}$ parallel to the Earth's main field is measured [^5].
 
