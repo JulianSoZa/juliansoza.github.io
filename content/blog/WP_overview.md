@@ -94,7 +94,11 @@ Seismic tomography is an inversion technique that uses seismic data to construct
 Two main approaches are used: **reflection tomography**, which analyzes reflection travel-time measurements, and **transmission tomography**, which uses seismic transmission waves that experience refraction processes at boundaries where velocity changes. Transmission tomography requires putting the source points in a borehole and the receiver points at another borehole or at the surface [^2].
 ### The Refraction Method
 
-![](/images/theRefractionMethod.gif)
+
+<figure>
+  <img src="/images/theRefractionMethod.gif" width="400">
+  <figcaption>Simulation by <a href="https://figshare.com/authors/Oscar_Rinc_n_Carde_o/22258780">Oscar Rincón Cardeño</a></figcaption>
+</figure>
 
 When the incident angle equals the **critical angle** $\theta_{i_c}$, a special refracted wave, called the **head wave**, is generated. This **critically refracted wave** travels along the interface with the velocity $V_2$ of the lower medium and is refracted back to the earth’s surface at the same angle $\theta_{i_c}$, propagating through the upper medium with velocity $V_1$ [^8].
 
