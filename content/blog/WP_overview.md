@@ -3,7 +3,7 @@ title: An overview of Wave Propagation within Seismic Tomography
 date: 2025-08-31
 math: true
 authors:
-  - name: JulianSoZA
+  - name: JulianSoZa
     link: https://github.com/JulianSoZa
     image: https://github.com/JulianSoZa.png
 category: Wave Propagation

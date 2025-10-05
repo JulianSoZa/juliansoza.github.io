@@ -3,7 +3,7 @@ title: An overview of Geological Lineament Detection Using Gravity and Magnetic 
 date: 2025-08-19
 math: true
 authors:
-  - name: JulianSoZA
+  - name: JulianSoZa
     link: https://github.com/JulianSoZa
     image: https://github.com/JulianSoZa.png
 category: Lineament Detection
