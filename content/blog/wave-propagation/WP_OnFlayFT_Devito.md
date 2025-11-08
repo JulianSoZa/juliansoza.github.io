@@ -1,7 +1,7 @@
 ---
 title: Wave Equation to Frequency Domain using Devito
-date: 2025-09-07
-draft: true
+date: 2025-09-14
+draft: false
 math: true
 authors:
   - name: JulianSoZa
@@ -20,7 +20,7 @@ category: Wave Propagation
 tags:
   - Geophysics
   - Waves
-excludeSearch: true
+excludeSearch: false
 ---
 In this post, I present a reproduction of the Devito [^2] [^3] tutorial [*17 – On-the-fly Discrete Fourier Transform*](https://www.devitoproject.org/examples/seismic/tutorials/17_fourier_mode.html), implemented in the notebook [`wave_eq_to_freq_domain.ipynb`](https://github.com/JulianSoZa/seismic_wave_propagation/blob/42ebf1b8333706283b4c28a45851101b14ed50e0/notebooks/wave_eq_to_freq_domain.ipynb), where the **frequency components of the wavefield** are computed.
 <!--more-->
