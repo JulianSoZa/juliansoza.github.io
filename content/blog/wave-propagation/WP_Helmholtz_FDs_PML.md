@@ -161,7 +161,7 @@ Zooming into the main region, we obtain:
   <figcaption>Simulated frequency:  $10 \, \text{Hz}$</figcaption>
 </figure>
 
-which corresponds to the solution obtained using Devito in [Wave Equation to Frequency Domain using Devito](../WP_OnFlayFT_Devito/).
+which corresponds to the solution obtained using Devito in [Wave Equation to Frequency Domain using Devito](../wp_onflayft_devito/).
 
 ## References
 
