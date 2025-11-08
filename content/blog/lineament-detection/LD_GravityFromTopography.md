@@ -1,7 +1,7 @@
 ---
 title: Calculating Gravity from Topographic Raster Data
-date: 2025-09-14
-draft: true
+date: 2025-09-07
+draft: false
 math: true
 authors:
   - name: JulianSoZa
@@ -18,7 +18,7 @@ tags:
   - Geophysics
   - Gravity
   - Forward_Modelling
-excludeSearch: true
+excludeSearch: false
 ---
 In this post, I present a reproduction of the Harmonica tutorial [*Gravitational effect of topography*](https://www.fatiando.org/harmonica/latest/gallery/forward/prisms_topo_gravity.html), implemented in the notebook [`gravity_from_topography.ipynb`](https://github.com/AppliedMechanics-EAFIT/lineament_detection/blob/1ba094eed0780be5ae721a53d5fe80dd2129c41c/notebooks/gravity_from_topography.ipynb), using a Digital Elevation Model (DEM) sourced from [Colombia en Mapas](https://www.colombiaenmapas.gov.co/inicio/).
 
