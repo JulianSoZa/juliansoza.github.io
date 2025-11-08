@@ -1,7 +1,7 @@
 ---
 title: Helmholtz Equation, Finite Differences and PML Boundary Conditions
 date: 2025-10-12
-draft: true
+draft: false
 math: true
 authors:
   - name: JulianSoZa
