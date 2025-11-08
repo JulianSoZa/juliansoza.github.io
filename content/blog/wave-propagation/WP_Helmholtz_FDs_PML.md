@@ -139,9 +139,9 @@ c_d = \frac{B_{i,j+1}}{4 \Delta_{z}^{2}} + \frac{B_{i,j}}{\Delta_{z}^{2}} - \fra
 c_e = - \frac{B_{i,j+1}}{4 \Delta_{z}^{2}} + \frac{B_{i,j}}{\Delta_{z}^{2}} + \frac{B_{i,j-1}}{4 \Delta_{z}^{2}}.
 $$
 
-The code developed in [`pml_conditions.py`](https://github.com/JulianSoZa/seismic_wave_propagation/blob/c4b367f5f848a8687ae46261ebd5a6319108b733/modules/helmholtz_equation/pml_conditions.py) computes the numerical solution using a methodology similar to that described in <a href="../WP_Helmholtz_FDs/">Helmholtz Equation - Finite Differences</a>. The Python code constructs the linear matrix system by assigning the weights of each node to the system matrix. This results in a sparse matrix, which we create using the `csr_matrix` class from SciPy. The linear system is then solved efficiently using the `spsolve` function from SciPy. 
+The code developed in [`pml_conditions.py`](https://github.com/JulianSoZa/seismic_wave_propagation/blob/c4b367f5f848a8687ae46261ebd5a6319108b733/modules/helmholtz_equation/pml_conditions.py) computes the numerical solution using a methodology similar to that described in <a href="../wp_helmholtz_fds/">Helmholtz Equation - Finite Differences</a>. The Python code constructs the linear matrix system by assigning the weights of each node to the system matrix. This results in a sparse matrix, which we create using the `csr_matrix` class from SciPy. The linear system is then solved efficiently using the `spsolve` function from SciPy. 
 
-To evaluate the code, we simulated a problem similar to that presented in [Wave Equation to Frequency Domain using Devito](../WP_OnFlayFT_Devito/). The velocity model consists of a single interface separating two media:
+To evaluate the code, we simulated a problem similar to that presented in [Wave Equation to Frequency Domain using Devito](../wp_onflayft_devito/). The velocity model consists of a single interface separating two media:
 
 <figure>
   <img src="/images/WP/velocity_model_single_interface_pml.png" alt="velocity_model_single_interface_pml" width="500">
