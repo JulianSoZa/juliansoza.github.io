@@ -12,7 +12,7 @@ tags:
   - Theory
   - Overview
   - Waves
-excludeSearch: true
+excludeSearch: false
 ---
 In this post, I provide an overview of seismic wave propagation within the seismic tomography geophysical imaging technique, based on several bibliographic resources I have studied.
 <!--more-->
@@ -48,20 +48,20 @@ Love waves occur when a solid elastic semi-infinite medium is overlain by a hori
 In the Earth Crust, a seismic wave may meet a variety of geological changes. Typically, the media are made up of layered rock formations of different densities and elastic properties, which changes the velocity of propagation. [^2] When a P- or  S-wave hits the boundary between two materials it excites vibrations on both sides, and some of its energy is reflected back into the first medium and some is transmitted into the second. This process, which is governed by rules similar to those of light waves in optics, produces new seismic waves on either side of the interface [^3].
 
 <div style="display: flex; gap: 10px;">
-  <img src="/images/reflectionAndRefraction.png"/>
-  <img src="/images/SeismicWaveInterface.gif"/>
+  <img src="/images/WP/reflectionAndRefraction.png"/>
+  <img src="/images/WP/SeismicWaveInterface.gif"/>
 </div>
 
 #### Reflection
 
-![](/images/reflection.png)
+![](/images/WP/reflection.png)
 
 The angle between a ray and a normal to the horizontal surface is termed the angle of incidence $\theta_i$. The angle of incidence equals the angle of reflection $\theta_{rfl}$.
 
 $$\theta_i=\theta_{rfl}, \quad \text{(Reflection)}.$$
 #### Refraction
 
-![](/images/refraction.png)
+![](/images/WP/refraction.png)
 
 The rest of the incident wave is transmitted through the interfaces with their ray-paths being bent (refracted) in case of inclined incidence and with no bending when ray-path is perpendicular to an interface [^6].
 $$V_{rfr}  \sin⁡ \theta_i =V_i  \sin \theta_{rfr},  \quad \text{(Snell’s Law
@@ -69,7 +69,7 @@ $$V_{rfr}  \sin⁡ \theta_i =V_i  \sin \theta_{rfr},  \quad \text{(Snell’s L
 
 #### Critical refraction
 
-![](/images/criticalRefraction.png)
+![](/images/WP/criticalRefraction.png)
 
 The angle of refraction increases as the angle of incidence increases until rays are refracted parallel to the interface between the two materials (critically refraction). If the angle of incidence increases beyond this special value, then no refraction occurs, and the ray is totally reflected [^7]. 
 $$\theta_{i_c}=\sin^{-1}⁡\left(V_1/V_2\right).$$
@@ -96,7 +96,7 @@ Two main approaches are used: **reflection tomography**, which analyzes reflecti
 
 
 <figure>
-  <img src="/images/theRefractionMethod.gif" width="400">
+  <img src="/images/WP/theRefractionMethod.gif" width="400">
   <figcaption>Simulation by <a href="https://figshare.com/authors/Oscar_Rinc_n_Carde_o/22258780">Oscar Rincón Cardeño</a></figcaption>
 </figure>
 
@@ -153,7 +153,8 @@ Two key aspects must be considered before applying FWI: (1) **FWI uses the full 
 
 **[Devito](https://www.devitoproject.org/)** [^13] is a Python package for implementing optimized stencil computations (e.g., finite differences) from high-level symbolic problem definitions. Built on SimPy, it uses automated code generation and just-in-time compilation to execute optimized computational kernels on several computer platforms, including CPUs, GPUs, and clusters. Devito is widely used to create **wave propagation kernels** for seismic inversion problems. The [Seismic modeling and inversion tutorial](https://www.devitoproject.org/examples/seismic/tutorials/01_modelling.html "https://www.devitoproject.org/examples/seismic/tutorials/01_modelling.html") provides a broad set of notebooks that implements various wave equations for modeling and inversion.
 
-In parallel, recent research has explored **physics-informed neural networks (PINNs)** as an alternative approach to seismic modeling and inversion. Authors in [^12] present an approach to the solution of the wave propagation and full waveform inversions (FWIs) based on PINNs. They present an algorithm applying PINNs to the acoustic wave equation, testing the method on both forward modeling and FWI case studies. Their results demonstrate that PINNs yield excellent results for inversions on all cases considered and with limited computational complexity [^12]. 
+In parallel, recent research has explored **physics-informed neural networks (PINNs)** as an alternative approach to seismic modeling and inversion. Authors in [^12] present an approach to the solution of the wave propagation and full waveform inversions (FWIs) based on PINNs. They present an algorithm applying PINNs to the acoustic wave equation, testing the method on both forward modeling and FWI case studies. Their results demonstrate that PINNs yield excellent results for inversions on all cases considered and with limited computational complexity [^12].
+
 ## References
 
 [^1]: M. M. Selim Saleh, “Body Waves,” in _Encyclopedia of Solid Earth Geophysics_, H. K. Gupta, Ed., Dordrecht: Springer Netherlands, 2011, pp. 29–35. doi: [10.1007/978-90-481-8702-7_140](https://doi.org/10.1007/978-90-481-8702-7_140).
