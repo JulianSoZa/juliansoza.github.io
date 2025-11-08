@@ -1,7 +1,7 @@
 ---
 title: Accessing DEMs and Sentinel-1 Data from the Planetary Computer catalogs
 date: 2025-10-05
-draft: true
+draft: false
 math: true
 authors:
   - name: JulianSoZa
