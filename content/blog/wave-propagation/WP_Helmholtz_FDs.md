@@ -1,7 +1,7 @@
 ---
 title: Helmholtz Equation - Finite Differences
-date: 2025-09-14
-draft: true
+date: 2025-09-21
+draft: false
 math: true
 authors:
   - name: JulianSoZa
@@ -17,9 +17,9 @@ category: Wave Propagation
 tags:
   - Geophysics
   - Waves
-excludeSearch: true
+excludeSearch: false
 ---
-In this post, I show the finite difference scheme of the Helmholtz Equation for a 2D domain and its Dirichlet-condition version.
+In this post, I show the finite difference scheme of the Helmholtz Equation for a 2D domain and its Dirichlet-condition version. The code developed in [`dirichlet_conditions.py`](https://github.com/JulianSoZa/seismic_wave_propagation/blob/e7f5d6c44e96c57176837608b32934c40a046b15/modules/helmholtz_equation/dirichlet_conditions.py) calculates the numerical solution using this methodology.
 <!--more-->
 
 ## Finite Difference Method: Central Scheme
@@ -104,7 +104,7 @@ For a problem defined on a domain with the following Dirichlet boundary conditio
 we can solve the corresponding linear matrix system:
 ![C](/images/WP/matrix_finite_differences_example.png)
 
-The code developed in [dirichlet_conditions.py](https://github.com/JulianSoZa/seismic_wave_propagation/blob/e7f5d6c44e96c57176837608b32934c40a046b15/modules/helmholtz_equation/dirichlet_conditions.py) calculates the numerical solution using this methodology. The Python code constructs the linear matrix system by assigning the weights of each node to the system matrix. This results in a sparse matrix, which we create using the `csr_matrix` class from SciPy. The linear system is then solved efficiently using the `spsolve` function from SciPy.
+The code developed in [`dirichlet_conditions.py`](https://github.com/JulianSoZa/seismic_wave_propagation/blob/e7f5d6c44e96c57176837608b32934c40a046b15/modules/helmholtz_equation/dirichlet_conditions.py) calculates the numerical solution using this methodology. The Python code constructs the linear matrix system by assigning the weights of each node to the system matrix. This results in a sparse matrix, which we create using the `csr_matrix` class from SciPy. The linear system is then solved efficiently using the `spsolve` function from SciPy.
 
 To assess the code, we simulated the following problem:
 
