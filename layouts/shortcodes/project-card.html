@@ -1,0 +1,28 @@
+<a href="{{ .Get "link" }}" style="text-decoration: none;">
+  <div style="
+       display: flex;
+       flex-direction: column;
+       border-radius: 16px;
+       overflow: hidden;
+       background-color: #fff;
+       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+       transition: transform 0.25s ease, box-shadow 0.25s ease;
+     "
+       onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'"
+  >
+    <!-- Imagen opcional -->
+    {{ with .Get "image" }}
+      <img src="{{ . }}" alt="{{ $.Get "title" }}"
+           style="width: 100%; height: 200px; object-fit: cover; display: block;">
+    {{ end }}
+
+    <!-- Contenido de la tarjeta -->
+    <div style="padding: 1em; text-align: center; font-weight: 600;">
+      {{ if .Get "icon" }}
+        <span class="icon">{{ .Get "icon" }}</span>
+      {{ end }}
+      {{ .Get "title" }}
+    </div>
+  </div>
+</a>

@@ -5,8 +5,10 @@ title: "Blog"
 ## Projects
 
 {{< cards >}}
-  {{< card link="wave-propagation/" title="Wave Propagation" icon="user" >}}
-  {{< card link="lineament-detection/" title="Lineament Detection" icon="user" >}}
+  <!-- {{< card link="wave-propagation/" title="Wave Propagation" icon="user" >}}
+  {{< card link="lineament-detection/" title="Lineament Detection" icon="user" >}} -->
+  {{< project-card link="wave-propagation/" title="Wave Propagation" image="/images/WP/front.jpg" >}}
+  {{< project-card link="lineament-detection/" title="Lineament Detection"  image="/images/LD/front2.png" >}}
   {{< card link="drafts/" title="Drafts" icon="user" >}}
 {{< /cards >}}
 

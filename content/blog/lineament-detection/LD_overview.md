@@ -13,7 +13,7 @@ tags:
   - Potential
   - Theory
   - Overview
-excludeSearch: true
+excludeSearch: false
 ---
 In this post, I provide an overview of the role of gravity and magnetic fields in geological lineament detection, based on several bibliographic resources I have studied.
 <!--more-->
@@ -159,7 +159,7 @@ There are various methods to delineate geological structures from geoscientific 
 
 [^1]: A. Aghaee, P. Shamsipour, S. Hood, and R. Haugaard, “A convolutional neural network for semi-automated lineament detection and vectorisation of remote sensing data using probabilistic clustering: A method and a challenge,” Comput. Geosci., vol. 151, p. 104724, June 2021, doi: [10.1016/j.cageo.2021.104724](https://doi.org/10.1016/j.cageo.2021.104724).
 
-[^2]: MIT OpenCourseWare. “Chapter 2: The Earth’s Gravitational field," *Essentials of Geophysics*. Massachusetts Institute of Technology. [Online]. Available: [ocw.mit.edu](https://ocw.mit.edu/courses/12-201-essentials-of-geophysics-fall-2004/resources/ch3pdf/)).
+[^2]: MIT OpenCourseWare. “Chapter 2: The Earth’s Gravitational field," *Essentials of Geophysics*. Massachusetts Institute of Technology. [Online]. Available: [ocw.mit.edu](https://ocw.mit.edu/courses/12-201-essentials-of-geophysics-fall-2004/resources/ch3pdf/).
 
 [^3]: W. Lowrie, “The Earth’s magnetic field,” in _Geophysics: A Very Short Introduction_, W. Lowrie, Ed., Oxford University Press, 2018. doi: [10.1093/actrade/9780198792956.003.0007](https://doi.org/10.1093/actrade/9780198792956.003.0007).
 
